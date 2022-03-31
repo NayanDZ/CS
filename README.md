@@ -1,4 +1,4 @@
-# Cloud Security
+# Cloud Security - AWS
 
 ##### What is a AWS S3 bucket? - > it is Amazone's SIMPLE | STORAGE | SERVICE
 ##### What is Amazon EC2 -> Elastic Computing Cloud (EC2) is a virtual server that can be used to run applications on AWS
@@ -24,7 +24,7 @@
   URL Structure like: ***https://bucketname.s3.amazon.com***
 
   - Tool: nahamsec/lazys3 (Bruteforcing-use world list)
-    ```$ ruby lazys3.rb zoho.com
+    ```$ ruby lazys3.rb zoho.com```
 
   - Tool: AWS CLI (To identify all Amazon S3 buckets with website configuration enabled)
     ```$ aws s3 LS s3://zoho.com --no-sign-request --region us-west-2```
