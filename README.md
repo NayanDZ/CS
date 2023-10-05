@@ -1,4 +1,15 @@
-# Cloud Security
+# Cloud Computing and Security
+Cliud Computing is Internet based computing where shared resources, software, and information provided to computers and other devices on demand.
+
+Deployment models of cloud computing
+- Saas(Software as  service)
+  - Software offering in the cloud (Windows live, Gmail, ZOHO)
+- Paas(Platform as service)
+  - Platform offering in the cloud (Windows Azure, AWS, Google’s App Engine)
+- Iaas(Infrastructure as service)
+  - Infrastructure offering in the cloud(VMware, IBM, GoGrid, Flexiscale)
+
+
 **Cloud security Top-10 Risk**
 
 1. R1-Accountability and Data ownership
@@ -12,7 +23,7 @@
 9. R9-Infrastructure Security
 10. R10-Not Production Environment Exposure
 
-## Cloud Vulnerability
+### Cloud Vulnerability
 1. Cloud Misconfiguration
    - Identity and Access Management
      - Enforce the principle of least privilege for all of your cloud resources and users; avoid granting complete access to a resource if a service only needs read access or access to a subpart of the resource.
