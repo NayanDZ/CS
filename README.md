@@ -1,4 +1,18 @@
-# Cloud Security - AWS
+# Cloud Security
+Cloud security Top-10 Risk
+
+1. R1-Accountability and Data ownership
+2. R2-User Identity Federation
+3. R3-Regulatory Compliance
+4. R4-Business Continuity and Resiliency
+5. R5-User Privacy and Secondary Usage of Data
+6. R6-Service and Data Integration
+7. R7-Multi Tanancy and Physical Security
+8. R8-Incidence Analysis and Forensic Support
+9. R9-Infrastructure Security
+10. R10-Not Production Environment Exposure
+     
+## Cloud Security - AWS
 
 ##### What is a AWS S3 bucket? - > it is Amazone's SIMPLE | STORAGE | SERVICE
 ##### What is Amazon EC2 -> Elastic Computing Cloud (EC2) is a virtual server that can be used to run applications on AWS
