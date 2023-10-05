@@ -1,5 +1,5 @@
 # Cloud Security
-Cloud security Top-10 Risk
+**Cloud security Top-10 Risk**
 
 1. R1-Accountability and Data ownership
 2. R2-User Identity Federation
@@ -11,7 +11,25 @@ Cloud security Top-10 Risk
 8. R8-Incidence Analysis and Forensic Support
 9. R9-Infrastructure Security
 10. R10-Not Production Environment Exposure
-     
+
+## Cloud Vulnerability
+1. Cloud Misconfiguration
+   - Identity and Access Management
+     - Enforce the principle of least privilege for all of your cloud resources and users; avoid granting complete access to a resource if a service only needs read access or access to a subpart of the resource.
+     - Use third-party tools to scan and detect misconfiguration of IAM policies; cloud-native application protection platform (CNAPP) can help increase the visibility of a misconfiguration.
+     - Frequently review access and privileges, as requirements change over time.
+   - Public Data Stoage
+   - Other Misconfigurations
+     - Always use HTTPS instead of HTTP also FTP instead of SFTP).
+     - Restrict all inbound and outbound ports if not needed.
+     - Keep secrets like API keys, passwords, etc. in one and only one place using a secure secret management solution (e.g., AWS Secrets Manager).
+2. Insecure APIs
+   - Implement web application firewall (WAF) to filter requests by IP address or HTTP header info, and to detect code injection attacks; WAFs also let you set response quotas per user or other metrics.
+4. Lack of Vusibility
+5. Lack of Multi-factor Authentication
+6. Malicious Insiders
+7. Distributed Denial-of-service attacks
+   
 ## Cloud Security - AWS
 
 ##### What is a AWS S3 bucket? - > it is Amazone's SIMPLE | STORAGE | SERVICE
