@@ -61,6 +61,29 @@ Azure roles provide access management for azure resources using the authorizatio
 | ------------- | ------------- |
 | <img width="712" alt="Screenshot 2023-10-14 150459" src="https://github.com/NayanDZ/CS/assets/65315090/7e2b50ec-d36c-4685-96ef-404b0de56946"> | ![rbac-admin-roles](https://github.com/NayanDZ/CS/assets/65315090/580348cb-2160-4232-aa4d-b10f31ab84bb) |
 
+- Discovery and Recon - Azure Tenant
+We know only ***Domain name*** or ***email address*** of target machine. (ex. microsoft.com)
+
+We can extract: Tenand ID, Tennand name, Authentication type, domains, Azure service used by targer organization, etc.
+```
+# Get Tenant name and Federation
+https://login.microsoftonline.com/getuserrealm.srf?login=USERNAME@**microsoft**.onmicrosoft.com&xml=1
+
+# Get Tenant ID
+https://login.microsoftonline.com/**microsoft**/.well-known/openid-configuration
+
+```
+
+  - [AADInternals](https://github.com/Gerenios/AADInternals)
+    ```
+    # Import the module
+    Import-Module C:\AzAD\Tools\AADInternals\AADInternals.psd.1 -verbose
+     
+     ```
+- Tools
+  - [Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.4.1&tabs=powershell&pivots=windows-msi)
+ 
+
 ## Cloud Security - AWS
 
 ##### What is a AWS S3 bucket? - > it is Amazone's SIMPLE | STORAGE | SERVICE
@@ -80,6 +103,7 @@ Azure roles provide access management for azure resources using the authorizatio
   
   ![image](https://user-images.githubusercontent.com/65315090/161034275-a2a64592-c147-4937-93aa-49411384c830.png)
   IF us get Name *.cloudfront.net it meens name resolution is protected by cloudfront.net
+
 
 ### Active Recon
 
