@@ -66,11 +66,12 @@ Deployment models of cloud computing
 - **Find S3 bucket URL**
   URL Structure like: ***https://bucketname.s3.amazon.com***
 
-  - Tool: nahamsec/lazys3 (Bruteforcing-use world list)
+  - Tool: **nahamsec/lazys3** (Bruteforcing-use world list)
     ```$ ruby lazys3.rb zoho.com```
 
-  - Tool: AWS CLI (To identify all Amazon S3 buckets with website configuration enabled)
+  - Tool: **AWS CLI** (To identify all Amazon S3 buckets with website configuration enabled)
     ```$ aws s3 LS s3://zoho.com --no-sign-request --region us-west-2```
+    
 ### Tools
 - Configuration Review
   - Prowler [https://github.com/prowler-cloud/prowler] (Open Source security tool to perform AWS, GCP and Azure security)
