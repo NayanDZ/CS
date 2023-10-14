@@ -43,11 +43,20 @@ Deployment models of cloud computing
 
 ## Cloud Security - Microsoft Azure
 Microsoft cloud computing plateform Azure is like AWS(Amazon) and GCP(Google).
-<img width="1248" alt="azure" src="https://github.com/NayanDZ/CS/assets/65315090/091a23ae-d5ee-497c-b35f-98d0af783fea">
+<img width="900" alt="azure" src="https://github.com/NayanDZ/CS/assets/65315090/091a23ae-d5ee-497c-b35f-98d0af783fea">
 
-**Azure Active Directory(Azure AD)** is Microsoft cloud based Identity and access management service.(*Identity as a Service Solution*-**IDaaS**) 
+### Azure Active Directory (Azure AD)
+Azure AD is Microsoft cloud based Identity and access management service.(*Identity as a Service Solution*-**IDaaS**) 
 
 Azure AD is **NOT directory service** in the cloud. That one is *Azure Active Directory Domain Service* which provide "domain controler as service"
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Tenant: is instance of Azure AD represent single organization </br></br> Azure AD Directory: Eatch tenant has a dedicated directory to perform identity and access management function for resources </br></br> Subscription: There can be multiple subscription in a Directory.(pay for service) </br></br> Resource groups: is logical container like web apps, databases and storage accounts are deployed and managed.</br></br> | ![resource-model](https://github.com/NayanDZ/CS/assets/65315090/ba1eab37-7c48-4122-a863-3237d5c80109)
+ |
+
+
+
 
 ## Cloud Security - AWS
 
