@@ -113,9 +113,13 @@ We know only ***Domain name*** or ***email address*** of target machine. (ex. mi
 - [MicroBurst](https://github.com/NetSPI/MicroBurst)
   ```
   # Enumerate all subdomains for an organization
-  ```
   Invoke-EnumerateAzureSubdomains -Base microsoft -verbose
   ```
+#### Initial Access - Storage Account (anonymous access)
+```
+# Find insecure storage blobs
+Invoke-EnumerateAzureBlobs -Base retailcorps
+```
 - Tools
   - [Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.4.1&tabs=powershell&pivots=windows-msi)
  
