@@ -61,25 +61,61 @@ Azure roles provide access management for azure resources using the authorizatio
 | ------------- | ------------- |
 | <img width="712" alt="Screenshot 2023-10-14 150459" src="https://github.com/NayanDZ/CS/assets/65315090/7e2b50ec-d36c-4685-96ef-404b0de56946"> | ![rbac-admin-roles](https://github.com/NayanDZ/CS/assets/65315090/580348cb-2160-4232-aa4d-b10f31ab84bb) |
 
-- Discovery and Recon - Azure Tenant
+#### Azure Blob Storage 
+- Blob Storage is used to store unstructured data (like Files, Photos, Videos, Audio, etc.)
+
+|  Three types of resource in Blob Storage  |    |
+| ------------- | ------------- |
+| - Storage Account: Unique namespace accross azure </br> - Container in the storage account: Folder in the storage account </br> - Blob in the container: Stores Data (Three types of Blob: Block, Append, Page Blobs) | ![blob](https://github.com/NayanDZ/CS/assets/65315090/6f532a1a-3477-4732-8aad-6e26292c94bd) |
+
+#### Discovery and Recon - Azure Tenant
+
 We know only ***Domain name*** or ***email address*** of target machine. (ex. microsoft.com)
 
-We can extract: Tenand ID, Tennand name, Authentication type, domains, Azure service used by targer organization, etc.
-```
-# Get Tenant name and Federation
-https://login.microsoftonline.com/getuserrealm.srf?login=USERNAME@**microsoft**.onmicrosoft.com&xml=1
-
-# Get Tenant ID
-https://login.microsoftonline.com/**microsoft**/.well-known/openid-configuration
-
-```
-
+**We can extract:** Tenand ID, Tennand name, Domains, Authentication type, Azure service used by targer organization.
+  - Browser
+  ```
+    # Get Tenant name and Federation
+    https://login.microsoftonline.com/getuserrealm.srf?login=USERNAME@**microsoft**.onmicrosoft.com&xml=1
+    
+    # Get Tenant ID
+    https://login.microsoftonline.com/**microsoft**.onmicrosoft.com/.well-known/openid-configuration
+  ```
   - [AADInternals](https://github.com/Gerenios/AADInternals)
-    ```
+  ```
+    # Install AADInternals (Copy and Paste the following command to install this package using PowerShellGet)
+    PS> Install-Module AADInternals |OR|  PS> Install-Module -Name AADInternals -RequiredVersion 0.8.0
+    # Set-ExecutionPolicy
+    PS> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
+    PS> Get-ExecutionPolicy -List
+    
     # Import the module
-    Import-Module C:\AzAD\Tools\AADInternals\AADInternals.psd.1 -verbose
-     
-     ```
+    Import-Module AADInternals |OR| Import-Module C:\Program Files\WindowsPowerShell\Modules\AADInternals\0.8.0\AADInternals.psd.1 -verbose
+  ```
+  ```
+    # Get login information for a domain
+    PS> Get-AADIntLoginInformation -Domain microsoft.onmicrosoft.com
+  ```
+  ```
+    # Get tenant ID
+    Get-AADIntTenantID -Domain microsoft.onmicrosoft.com
+  ```
+  ```
+    # List tenant Domains 
+    Get-AADIntTenantDomains -Domain microsoft.onmicrosoft.com
+    Get-AADIntTenantDomain -TenantId 72f988bf-86f1-41af-91ab-2d7cd011db47
+  ```
+  ```
+    # Invoke tenant recon as an outsider (Get All Information)
+    Invoke-AADIntReconAsOutsider -DomainName microsoft.onmicrosoft.com
+  ```
+#### Discovery and Recon - Azure Services
+- [MicroBurst](https://github.com/NetSPI/MicroBurst)
+  ```
+  # Enumerate all subdomains for an organization
+  ```
+  Invoke-EnumerateAzureSubdomains -Base microsoft -verbose
+  ```
 - Tools
   - [Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.4.1&tabs=powershell&pivots=windows-msi)
  
