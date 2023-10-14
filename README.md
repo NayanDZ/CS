@@ -43,20 +43,23 @@ Deployment models of cloud computing
 
 ## Cloud Security - Microsoft Azure
 Microsoft cloud computing plateform Azure is like AWS(Amazon) and GCP(Google).
+
 <img width="900" alt="azure" src="https://github.com/NayanDZ/CS/assets/65315090/091a23ae-d5ee-497c-b35f-98d0af783fea">
 
 ### Azure Active Directory (Azure AD)
-Azure AD is Microsoft cloud based Identity and access management service.(*Identity as a Service Solution*-**IDaaS**) 
+Azure AD is Microsoft cloud based ***Identity and access management service***.(*Identity as a Service Solution*-**IDaaS**) 
 
 Azure AD is **NOT directory service** in the cloud. That one is *Azure Active Directory Domain Service* which provide "domain controler as service"
 
-| First Header  | Second Header |
+| Azure Terminology | Azure Architecture |
 | ------------- | ------------- |
-| Tenant: is instance of Azure AD represent single organization </br></br> Azure AD Directory: Eatch tenant has a dedicated directory to perform identity and access management function for resources </br></br> Subscription: There can be multiple subscription in a Directory.(pay for service) </br></br> Resource groups: is logical container like web apps, databases and storage accounts are deployed and managed.</br></br> | ![resource-model](https://github.com/NayanDZ/CS/assets/65315090/ba1eab37-7c48-4122-a863-3237d5c80109)
- |
+| **- Tenant:** is instance of Azure AD represent single organization </br></br> **- Azure AD Directory:** Eatch tenant has a dedicated directory to perform identity and access management function for resources </br></br> **- Management Group:** to manage multiple subscriptions. all subscription inharit the condition applied to managemnt group </br></br> **-** **-Subscription:** is Billing or Access control boundry in Azure AD. There can be multiple subscription in a Directory.(pay for service) </br></br> **-Resource groups:** is logical container like web apps, databases and storage accounts are deployed and managed.</br></br> **-Resource:** is deployable item like. VMs, App services, Storage, etc. all resource must be inside of resource group. | <img width="800" alt="azure" src="https://github.com/NayanDZ/CS/assets/65315090/ba1eab37-7c48-4122-a863-3237d5c80109"> |
 
-
-
+#### Azure RBAC Roles
+Azure roles provide access management for azure resources using the authorization system of ARM.
+| Fore Fundamental Role (120 built-in) |  |
+| ------------- | ------------- |
+| <img width="712" alt="Screenshot 2023-10-14 150459" src="https://github.com/NayanDZ/CS/assets/65315090/7e2b50ec-d36c-4685-96ef-404b0de56946"> | ![rbac-admin-roles](https://github.com/NayanDZ/CS/assets/65315090/580348cb-2160-4232-aa4d-b10f31ab84bb) |
 
 ## Cloud Security - AWS
 
