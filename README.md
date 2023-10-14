@@ -40,7 +40,15 @@ Deployment models of cloud computing
 5. Lack of Multi-factor Authentication
 6. Malicious Insiders
 7. Distributed Denial-of-service attacks
-   
+
+## Cloud Security - Microsoft Azure
+Microsoft cloud computing plateform Azure is like AWS(Amazon) and GCP(Google).
+<img width="1248" alt="azure" src="https://github.com/NayanDZ/CS/assets/65315090/091a23ae-d5ee-497c-b35f-98d0af783fea">
+
+**Azure Active Directory(Azure AD)** is Microsoft cloud based Identity and access management service.(*Identity as a Service Solution*-**IDaaS**) 
+
+Azure AD is **NOT directory service** in the cloud. That one is *Azure Active Directory Domain Service* which provide "domain controler as service"
+
 ## Cloud Security - AWS
 
 ##### What is a AWS S3 bucket? - > it is Amazone's SIMPLE | STORAGE | SERVICE
@@ -63,7 +71,7 @@ Deployment models of cloud computing
 
 ### Active Recon
 
-- **Find S3 bucket URL**
+- **Find S3 bucket URL:**
   URL Structure like: ***https://bucketname.s3.amazon.com***
 
   - Tool: **nahamsec/lazys3** (Bruteforcing-use world list)
