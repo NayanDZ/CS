@@ -118,10 +118,11 @@ We know only ***Domain name*** or ***email address*** of target machine. (ex. mi
 #### Initial Access - Storage Account (anonymous access)
 ```
 # Find insecure storage blobs
-Invoke-EnumerateAzureBlobs -Base retailcorps
+Invoke-EnumerateAzureBlobs -Base microsoft
 ```
-- Tools
-  - [Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.4.1&tabs=powershell&pivots=windows-msi)
+#### Enumeration - Azure Portal
+- Azure portal is web console that can be used to manage azure account and resources.
+- alternative tools like [Az PowerShell module](https://learn.microsoft.com/en-us/powershell/azure/install-azps-windows?view=azps-10.4.1&tabs=powershell&pivots=windows-msi) and [Azure (CLI)](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?tabs=azure-cli)
  
 
 ## Cloud Security - AWS
