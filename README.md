@@ -1,5 +1,5 @@
 # Cloud Computing and Security
-Cliud Computing is Internet based computing where shared resources, software, and information provided to computers and other devices on demand.
+Cloud Computing is Internet based computing where shared resources, software, and information provided to computers and other devices on demand.
 
 Deployment models of cloud computing
 - Saas(Software as  service)
